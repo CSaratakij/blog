@@ -11,7 +11,12 @@
                   {{ range $key, $value := .Data.Terms.ByCount }}
                      {{ if ($value.Name) }}
                         <li>
+                            <!-->
                            <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}">
+                              {{ $value.Name | upper }} <span>({{ $value.Count }})</span>
+                           </a>
+                           <-->
+                           <a href="{{ $.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
                               {{ $value.Name | upper }} <span>({{ $value.Count }})</span>
                            </a>
 

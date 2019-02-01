@@ -1,7 +1,23 @@
 baseURL = "https://csaratakij.github.io/"
 title = "CSaratakij"
-languageCode = "en-us"
+languageCode = "th"
 theme = "hugo-theme-cactus-plus"
+DefaultContentLanguage = "th"
+defaultContentLanguageInSubdir = true
+
+[taxonomies]
+tag = "tags"
+
+[languages]
+    [languages.th]
+    languageName = "th"
+    contentDir = "content/th"
+    [languages.en]
+    languageName = "en"
+    contentDir = "content/en"
+
+[permalinks]
+   posts = "/:year/:month/:title/"
 
 [params]
 	author = "CSaratakij"
